@@ -14,13 +14,13 @@ namespace SalesWinApp
 
         private void memberToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-           if (!CheckExistForm("frmMemberManagements"))
-           {
-                frmMemberManagements frm = new frmMemberManagements() { isAdmin = this.isAdmin, id = this.id};
+            if (!CheckExistForm("frmMemberManagements"))
+            {
+                frmMemberManagements frm = new frmMemberManagements() { isAdmin = this.isAdmin, id = this.id };
                 frm.MdiParent = this;
                 frm.Show();
-           }
-           else ActiveChildForm("frmMemberManagements");
+            }
+            else ActiveChildForm("frmMemberManagements");
         }
 
         private void productToolStripMenuItem_Click(object sender, System.EventArgs e)
@@ -49,7 +49,7 @@ namespace SalesWinApp
         private bool CheckExistForm(string name)
         {
             bool check = false;
-            foreach(Form frm in this.MdiChildren)
+            foreach (Form frm in this.MdiChildren)
             {
                 if (frm.Name == name)
                 {
@@ -59,9 +59,9 @@ namespace SalesWinApp
             }
             return check;
         }
-        private void ActiveChildForm (string name)
+        private void ActiveChildForm(string name)
         {
-            foreach(Form frm in this.MdiChildren)
+            foreach (Form frm in this.MdiChildren)
             {
                 if (frm.Name == name)
                 {

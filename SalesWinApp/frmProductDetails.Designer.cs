@@ -29,173 +29,172 @@ namespace SalesWinApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.txtProductID = new System.Windows.Forms.TextBox();
-            this.txtProductName = new System.Windows.Forms.TextBox();
-            this.txtCategoryID = new System.Windows.Forms.TextBox();
-            this.txtWeight = new System.Windows.Forms.TextBox();
-            this.lbUnitPrice = new System.Windows.Forms.Label();
-            this.lbUnitsInStock = new System.Windows.Forms.Label();
-            this.lbWeight = new System.Windows.Forms.Label();
-            this.lbCategoryID = new System.Windows.Forms.Label();
-            this.lbProductName = new System.Windows.Forms.Label();
-            this.lbProductID = new System.Windows.Forms.Label();
-            this.txtUnitPrice = new System.Windows.Forms.TextBox();
-            this.txtUnitsInStock = new System.Windows.Forms.TextBox();
-            this.SuspendLayout();
+            btnCancel = new System.Windows.Forms.Button();
+            btnSave = new System.Windows.Forms.Button();
+            txtProductID = new System.Windows.Forms.TextBox();
+            txtProductName = new System.Windows.Forms.TextBox();
+            txtCategoryID = new System.Windows.Forms.TextBox();
+            txtWeight = new System.Windows.Forms.TextBox();
+            lbUnitPrice = new System.Windows.Forms.Label();
+            lbUnitsInStock = new System.Windows.Forms.Label();
+            lbWeight = new System.Windows.Forms.Label();
+            lbCategoryID = new System.Windows.Forms.Label();
+            lbProductName = new System.Windows.Forms.Label();
+            lbProductID = new System.Windows.Forms.Label();
+            txtUnitPrice = new System.Windows.Forms.TextBox();
+            txtUnitsInStock = new System.Windows.Forms.TextBox();
+            SuspendLayout();
             // 
             // btnCancel
             // 
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(328, 278);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(82, 22);
-            this.btnCancel.TabIndex = 28;
-            this.btnCancel.Text = "&Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            btnCancel.Location = new System.Drawing.Point(328, 278);
+            btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new System.Drawing.Size(82, 22);
+            btnCancel.TabIndex = 28;
+            btnCancel.Text = "&Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // btnSave
             // 
-            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSave.Location = new System.Drawing.Point(156, 278);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(82, 22);
-            this.btnSave.TabIndex = 27;
-            this.btnSave.Text = "&Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
+            btnSave.Location = new System.Drawing.Point(156, 278);
+            btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new System.Drawing.Size(82, 22);
+            btnSave.TabIndex = 27;
+            btnSave.Text = "&Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // txtProductID
             // 
-            this.txtProductID.Location = new System.Drawing.Point(156, 11);
-            this.txtProductID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtProductID.Name = "txtProductID";
-            this.txtProductID.Size = new System.Drawing.Size(254, 23);
-            this.txtProductID.TabIndex = 25;
+            txtProductID.Location = new System.Drawing.Point(156, 11);
+            txtProductID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtProductID.Name = "txtProductID";
+            txtProductID.Size = new System.Drawing.Size(254, 23);
+            txtProductID.TabIndex = 25;
             // 
             // txtProductName
             // 
-            this.txtProductName.Location = new System.Drawing.Point(156, 50);
-            this.txtProductName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtProductName.Name = "txtProductName";
-            this.txtProductName.Size = new System.Drawing.Size(254, 23);
-            this.txtProductName.TabIndex = 24;
+            txtProductName.Location = new System.Drawing.Point(156, 50);
+            txtProductName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtProductName.Name = "txtProductName";
+            txtProductName.Size = new System.Drawing.Size(254, 23);
+            txtProductName.TabIndex = 24;
             // 
             // txtCategoryID
             // 
-            this.txtCategoryID.Location = new System.Drawing.Point(156, 96);
-            this.txtCategoryID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCategoryID.Name = "txtCategoryID";
-            this.txtCategoryID.Size = new System.Drawing.Size(254, 23);
-            this.txtCategoryID.TabIndex = 23;
+            txtCategoryID.Location = new System.Drawing.Point(156, 96);
+            txtCategoryID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtCategoryID.Name = "txtCategoryID";
+            txtCategoryID.Size = new System.Drawing.Size(254, 23);
+            txtCategoryID.TabIndex = 23;
             // 
             // txtWeight
             // 
-            this.txtWeight.Location = new System.Drawing.Point(156, 140);
-            this.txtWeight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtWeight.Name = "txtWeight";
-            this.txtWeight.Size = new System.Drawing.Size(254, 23);
-            this.txtWeight.TabIndex = 22;
+            txtWeight.Location = new System.Drawing.Point(156, 140);
+            txtWeight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtWeight.Name = "txtWeight";
+            txtWeight.Size = new System.Drawing.Size(254, 23);
+            txtWeight.TabIndex = 22;
             // 
             // lbUnitPrice
             // 
-            this.lbUnitPrice.AutoSize = true;
-            this.lbUnitPrice.Location = new System.Drawing.Point(12, 183);
-            this.lbUnitPrice.Name = "lbUnitPrice";
-            this.lbUnitPrice.Size = new System.Drawing.Size(58, 15);
-            this.lbUnitPrice.TabIndex = 21;
-            this.lbUnitPrice.Text = "Unit Price";
+            lbUnitPrice.AutoSize = true;
+            lbUnitPrice.Location = new System.Drawing.Point(12, 183);
+            lbUnitPrice.Name = "lbUnitPrice";
+            lbUnitPrice.Size = new System.Drawing.Size(58, 15);
+            lbUnitPrice.TabIndex = 21;
+            lbUnitPrice.Text = "Unit Price";
             // 
             // lbUnitsInStock
             // 
-            this.lbUnitsInStock.AutoSize = true;
-            this.lbUnitsInStock.Location = new System.Drawing.Point(12, 231);
-            this.lbUnitsInStock.Name = "lbUnitsInStock";
-            this.lbUnitsInStock.Size = new System.Drawing.Size(79, 15);
-            this.lbUnitsInStock.TabIndex = 20;
-            this.lbUnitsInStock.Text = "Units In Stock";
+            lbUnitsInStock.AutoSize = true;
+            lbUnitsInStock.Location = new System.Drawing.Point(12, 231);
+            lbUnitsInStock.Name = "lbUnitsInStock";
+            lbUnitsInStock.Size = new System.Drawing.Size(79, 15);
+            lbUnitsInStock.TabIndex = 20;
+            lbUnitsInStock.Text = "Units In Stock";
             // 
             // lbWeight
             // 
-            this.lbWeight.AutoSize = true;
-            this.lbWeight.Location = new System.Drawing.Point(12, 140);
-            this.lbWeight.Name = "lbWeight";
-            this.lbWeight.Size = new System.Drawing.Size(45, 15);
-            this.lbWeight.TabIndex = 19;
-            this.lbWeight.Text = "Weight";
+            lbWeight.AutoSize = true;
+            lbWeight.Location = new System.Drawing.Point(12, 140);
+            lbWeight.Name = "lbWeight";
+            lbWeight.Size = new System.Drawing.Size(45, 15);
+            lbWeight.TabIndex = 19;
+            lbWeight.Text = "Weight";
             // 
             // lbCategoryID
             // 
-            this.lbCategoryID.AutoSize = true;
-            this.lbCategoryID.Location = new System.Drawing.Point(12, 98);
-            this.lbCategoryID.Name = "lbCategoryID";
-            this.lbCategoryID.Size = new System.Drawing.Size(66, 15);
-            this.lbCategoryID.TabIndex = 18;
-            this.lbCategoryID.Text = "CategoryID";
+            lbCategoryID.AutoSize = true;
+            lbCategoryID.Location = new System.Drawing.Point(12, 98);
+            lbCategoryID.Name = "lbCategoryID";
+            lbCategoryID.Size = new System.Drawing.Size(66, 15);
+            lbCategoryID.TabIndex = 18;
+            lbCategoryID.Text = "CategoryID";
             // 
             // lbProductName
             // 
-            this.lbProductName.AutoSize = true;
-            this.lbProductName.Location = new System.Drawing.Point(12, 50);
-            this.lbProductName.Name = "lbProductName";
-            this.lbProductName.Size = new System.Drawing.Size(84, 15);
-            this.lbProductName.TabIndex = 17;
-            this.lbProductName.Text = "Product Name";
+            lbProductName.AutoSize = true;
+            lbProductName.Location = new System.Drawing.Point(12, 50);
+            lbProductName.Name = "lbProductName";
+            lbProductName.Size = new System.Drawing.Size(84, 15);
+            lbProductName.TabIndex = 17;
+            lbProductName.Text = "Product Name";
             // 
             // lbProductID
             // 
-            this.lbProductID.AutoSize = true;
-            this.lbProductID.Location = new System.Drawing.Point(12, 11);
-            this.lbProductID.Name = "lbProductID";
-            this.lbProductID.Size = new System.Drawing.Size(63, 15);
-            this.lbProductID.TabIndex = 16;
-            this.lbProductID.Text = "Product ID";
+            lbProductID.AutoSize = true;
+            lbProductID.Location = new System.Drawing.Point(12, 11);
+            lbProductID.Name = "lbProductID";
+            lbProductID.Size = new System.Drawing.Size(63, 15);
+            lbProductID.TabIndex = 16;
+            lbProductID.Text = "Product ID";
             // 
             // txtUnitPrice
             // 
-            this.txtUnitPrice.Location = new System.Drawing.Point(156, 180);
-            this.txtUnitPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtUnitPrice.Name = "txtUnitPrice";
-            this.txtUnitPrice.Size = new System.Drawing.Size(254, 23);
-            this.txtUnitPrice.TabIndex = 29;
+            txtUnitPrice.Location = new System.Drawing.Point(156, 180);
+            txtUnitPrice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtUnitPrice.Name = "txtUnitPrice";
+            txtUnitPrice.Size = new System.Drawing.Size(254, 23);
+            txtUnitPrice.TabIndex = 29;
             // 
             // txtUnitsInStock
             // 
-            this.txtUnitsInStock.Location = new System.Drawing.Point(156, 228);
-            this.txtUnitsInStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtUnitsInStock.Name = "txtUnitsInStock";
-            this.txtUnitsInStock.Size = new System.Drawing.Size(254, 23);
-            this.txtUnitsInStock.TabIndex = 30;
+            txtUnitsInStock.Location = new System.Drawing.Point(156, 228);
+            txtUnitsInStock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtUnitsInStock.Name = "txtUnitsInStock";
+            txtUnitsInStock.Size = new System.Drawing.Size(254, 23);
+            txtUnitsInStock.TabIndex = 30;
             // 
             // frmProductDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 309);
-            this.Controls.Add(this.txtUnitsInStock);
-            this.Controls.Add(this.txtUnitPrice);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtProductID);
-            this.Controls.Add(this.txtProductName);
-            this.Controls.Add(this.txtCategoryID);
-            this.Controls.Add(this.txtWeight);
-            this.Controls.Add(this.lbUnitPrice);
-            this.Controls.Add(this.lbUnitsInStock);
-            this.Controls.Add(this.lbWeight);
-            this.Controls.Add(this.lbCategoryID);
-            this.Controls.Add(this.lbProductName);
-            this.Controls.Add(this.lbProductID);
-            this.Name = "frmProductDetails";
-            this.Text = "Ass02Solution_SE1505_NguyenTuanKhai";
-            this.Load += new System.EventHandler(this.frmProductDetails_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(426, 309);
+            Controls.Add(txtUnitsInStock);
+            Controls.Add(txtUnitPrice);
+            Controls.Add(btnCancel);
+            Controls.Add(btnSave);
+            Controls.Add(txtProductID);
+            Controls.Add(txtProductName);
+            Controls.Add(txtCategoryID);
+            Controls.Add(txtWeight);
+            Controls.Add(lbUnitPrice);
+            Controls.Add(lbUnitsInStock);
+            Controls.Add(lbWeight);
+            Controls.Add(lbCategoryID);
+            Controls.Add(lbProductName);
+            Controls.Add(lbProductID);
+            Name = "frmProductDetails";
+            Text = "Product Detail";
+            Load += frmProductDetails_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -63,7 +63,7 @@ namespace SalesWinApp
 
                 dgvMemberList.DataSource = null;
                 dgvMemberList.DataSource = source;
-               
+
             }
             catch (Exception ex)
             {

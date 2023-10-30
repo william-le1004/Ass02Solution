@@ -14,7 +14,7 @@ namespace SalesWinApp
 {
     public partial class frmProductDetails : Form
     {
-       
+
         public IProductRepository ProductRepository { get; set; }
         public bool InsertOrUpdate { get; set; }
         public Product ProductInfor { get; set; }
@@ -26,7 +26,7 @@ namespace SalesWinApp
         }
         private void frmProductDetails_Load(object sender, EventArgs e)
         {
-        
+
             txtProductID.Enabled = !InsertOrUpdate;
             if (InsertOrUpdate == true)//update mode
             {
@@ -41,7 +41,7 @@ namespace SalesWinApp
             }
         }
         private void btnSave_Click(object sender, EventArgs e)
-        { 
+        {
             try
             {
                 if (System.Text.RegularExpressions.Regex.IsMatch(txtProductID.Text, @"^(?!\s*$).+")
@@ -52,23 +52,23 @@ namespace SalesWinApp
                        && System.Text.RegularExpressions.Regex.IsMatch(txtCategoryID.Text, @"^(?!\s*$).+"))
                 {
                     var product = new Product
-                {
-                    ProductId = int.Parse(txtProductID.Text),
-                    ProductName = txtProductName.Text,
-                    Weight = txtWeight.Text,
-                    UnitPrice = decimal.Parse(txtUnitPrice.Text),
-                    UnitslnStock = int.Parse(txtUnitsInStock.Text),
-                    CategoryId = int.Parse(txtCategoryID.Text),
+                    {
+                        ProductId = int.Parse(txtProductID.Text),
+                        ProductName = txtProductName.Text,
+                        Weight = txtWeight.Text,
+                        UnitPrice = decimal.Parse(txtUnitPrice.Text),
+                        UnitslnStock = int.Parse(txtUnitsInStock.Text),
+                        CategoryId = int.Parse(txtCategoryID.Text),
 
-                };
-                if (InsertOrUpdate == false)
-                {
-                    ProductRepository.InsertProduct(product);
-                }
-                else
-                {
-                    ProductRepository.UpdateProduct(product);
-                }
+                    };
+                    if (InsertOrUpdate == false)
+                    {
+                        ProductRepository.InsertProduct(product);
+                    }
+                    else
+                    {
+                        ProductRepository.UpdateProduct(product);
+                    }
                 }
                 else
                 {
@@ -78,10 +78,10 @@ namespace SalesWinApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, InsertOrUpdate == false ? "Add a new Product" : "Update a Product");
-            } 
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e) => Close();
-       
+
     }
 }

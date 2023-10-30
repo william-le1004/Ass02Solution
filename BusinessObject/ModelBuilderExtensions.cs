@@ -18,9 +18,19 @@ public static class ModelBuilderExtensions
                 City = "Quy Nhon",
                 CompanyName = "FPT",
                 Country = "VIET NAM",
-                Email = "kienle@gmail.com",
-                Password = "123",
-            });
+                Email = "kien@fstore.com",
+                Password = "kien@@",
+            },
+            new Member()
+            {
+                MemberId = 2,
+                City = "Quy Nhon",
+                CompanyName = "FPT",
+                Country = "VIET NAM",
+                Email = "admin@fstore.com",
+                Password = "admin@@",
+            }
+            );
         modelBuilder.Entity<Product>().HasData(
            new Product()
            {

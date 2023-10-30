@@ -59,7 +59,7 @@ namespace MyStoreWinApp
                     && System.Text.RegularExpressions.Regex.IsMatch(txtMemberName.Text, @"^(?!\s*$).+")
                     && System.Text.RegularExpressions.Regex.IsMatch(cboCity.Text, @"^(?!\s*$).+")
                     && System.Text.RegularExpressions.Regex.IsMatch(cboCountry.Text, @"^(?!\s*$).+")
-                    && System.Text.RegularExpressions.Regex.IsMatch(txtPassword.Text, @"^(?!\s*$).+")&&check==false)
+                    && System.Text.RegularExpressions.Regex.IsMatch(txtPassword.Text, @"^(?!\s*$).+") && check == false)
                 {
                     var member = new Member
                     {
@@ -92,6 +92,6 @@ namespace MyStoreWinApp
         }
 
         private void btnCancel_Click(object sender, EventArgs e) => Close();
-       
+
     }
 }

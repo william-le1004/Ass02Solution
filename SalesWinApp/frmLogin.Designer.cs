@@ -29,101 +29,102 @@ namespace MyStoreWinApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbLogin = new System.Windows.Forms.Label();
-            this.lbUsername = new System.Windows.Forms.Label();
-            this.lbPassword = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnLog = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            lbLogin = new System.Windows.Forms.Label();
+            lbUsername = new System.Windows.Forms.Label();
+            lbPassword = new System.Windows.Forms.Label();
+            txtUserName = new System.Windows.Forms.TextBox();
+            txtPassword = new System.Windows.Forms.TextBox();
+            btnLog = new System.Windows.Forms.Button();
+            btnCancel = new System.Windows.Forms.Button();
+            SuspendLayout();
             // 
             // lbLogin
             // 
-            this.lbLogin.AutoSize = true;
-            this.lbLogin.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbLogin.Location = new System.Drawing.Point(186, 9);
-            this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(70, 30);
-            this.lbLogin.TabIndex = 0;
-            this.lbLogin.Text = "Login";
+            lbLogin.AutoSize = true;
+            lbLogin.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lbLogin.Location = new System.Drawing.Point(186, 9);
+            lbLogin.Name = "lbLogin";
+            lbLogin.Size = new System.Drawing.Size(70, 30);
+            lbLogin.TabIndex = 0;
+            lbLogin.Text = "Login";
             // 
             // lbUsername
             // 
-            this.lbUsername.AutoSize = true;
-            this.lbUsername.Location = new System.Drawing.Point(12, 70);
-            this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(60, 15);
-            this.lbUsername.TabIndex = 1;
-            this.lbUsername.Text = "Username";
+            lbUsername.AutoSize = true;
+            lbUsername.Location = new System.Drawing.Point(12, 70);
+            lbUsername.Name = "lbUsername";
+            lbUsername.Size = new System.Drawing.Size(60, 15);
+            lbUsername.TabIndex = 1;
+            lbUsername.Text = "Username";
             // 
             // lbPassword
             // 
-            this.lbPassword.AutoSize = true;
-            this.lbPassword.Location = new System.Drawing.Point(12, 117);
-            this.lbPassword.Name = "lbPassword";
-            this.lbPassword.Size = new System.Drawing.Size(57, 15);
-            this.lbPassword.TabIndex = 2;
-            this.lbPassword.Text = "Password";
+            lbPassword.AutoSize = true;
+            lbPassword.Location = new System.Drawing.Point(12, 117);
+            lbPassword.Name = "lbPassword";
+            lbPassword.Size = new System.Drawing.Size(57, 15);
+            lbPassword.TabIndex = 2;
+            lbPassword.Text = "Password";
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(109, 68);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(238, 23);
-            this.txtUserName.TabIndex = 3;
+            txtUserName.Location = new System.Drawing.Point(109, 68);
+            txtUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new System.Drawing.Size(238, 23);
+            txtUserName.TabIndex = 3;
+            txtUserName.TextChanged += txtUserName_TextChanged;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(109, 117);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(238, 23);
-            this.txtPassword.TabIndex = 4;
+            txtPassword.Location = new System.Drawing.Point(109, 117);
+            txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '*';
+            txtPassword.Size = new System.Drawing.Size(238, 23);
+            txtPassword.TabIndex = 4;
+            txtPassword.TextChanged += txtPassword_TextChanged;
             // 
             // btnLog
             // 
-            this.btnLog.Location = new System.Drawing.Point(109, 178);
-            this.btnLog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLog.Name = "btnLog";
-            this.btnLog.Size = new System.Drawing.Size(82, 22);
-            this.btnLog.TabIndex = 5;
-            this.btnLog.Text = "&Login";
-            this.btnLog.UseVisualStyleBackColor = true;
-            this.btnLog.Click += new System.EventHandler(this.btnLog_Click);
+            btnLog.Location = new System.Drawing.Point(109, 178);
+            btnLog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnLog.Name = "btnLog";
+            btnLog.Size = new System.Drawing.Size(82, 22);
+            btnLog.TabIndex = 5;
+            btnLog.Text = "&Login";
+            btnLog.UseVisualStyleBackColor = true;
+            btnLog.Click += btnLog_Click;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(264, 178);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(82, 22);
-            this.btnCancel.TabIndex = 6;
-            this.btnCancel.Text = "&Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            btnCancel.Location = new System.Drawing.Point(264, 178);
+            btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new System.Drawing.Size(82, 22);
+            btnCancel.TabIndex = 6;
+            btnCancel.Text = "&Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(383, 216);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnLog);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUserName);
-            this.Controls.Add(this.lbPassword);
-            this.Controls.Add(this.lbUsername);
-            this.Controls.Add(this.lbLogin);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "frmLogin";
-            this.Text = "Ass02Solution_SE1505_NguyenTuanKhai";
-            this.Load += new System.EventHandler(this.frmLogin_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(383, 216);
+            Controls.Add(btnCancel);
+            Controls.Add(btnLog);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUserName);
+            Controls.Add(lbPassword);
+            Controls.Add(lbUsername);
+            Controls.Add(lbLogin);
+            Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            Name = "frmLogin";
+            Text = "LOGIN";
+            Load += frmLogin_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

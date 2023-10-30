@@ -107,7 +107,7 @@ namespace SalesWinApp
             {
                 member = new OrderDetail
                 {
-                    
+
                     OrderId = int.Parse(txtOrderID.Text),
                     ProductId = int.Parse(textBox4.Text),
                     Discount = double.Parse(textBox2.Text),
@@ -125,7 +125,7 @@ namespace SalesWinApp
         public void LoadMemberList()
         {
             var members = orderDRepository.GetOrderDetails();
-            List<Order> list=new List<Order>();
+            List<Order> list = new List<Order>();
             list.Add(OrderRepository.GetOrderByID(this.OrderId));
             try
             {
@@ -147,7 +147,7 @@ namespace SalesWinApp
 
                 dgvMemberList.DataSource = null;
                 dgvMemberList.DataSource = source;
-               
+
                 if (isAdmin == false)
                 {
                     if (members.Count() == 0)
@@ -191,7 +191,7 @@ namespace SalesWinApp
                 isAdmin = this.isAdmin,
                 Text = "Add Order Detail",
                 InsertOrUpdate = false,
-                OrderId= OrderInfor.OrderId,
+                OrderId = OrderInfor.OrderId,
                 OrderDetailRepository = orderDRepository
             };
             if (frm.ShowDialog() == DialogResult.OK)

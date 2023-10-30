@@ -29,345 +29,344 @@ namespace SalesWinApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvMemberList = new System.Windows.Forms.DataGridView();
-            this.btnLoad = new System.Windows.Forms.Button();
-            this.btnNew = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.txtOrderDate = new System.Windows.Forms.TextBox();
-            this.txtMemberID = new System.Windows.Forms.TextBox();
-            this.txtOrderID = new System.Windows.Forms.TextBox();
-            this.txtRequiredDate = new System.Windows.Forms.TextBox();
-            this.lbRequiredDate = new System.Windows.Forms.Label();
-            this.lbFreight = new System.Windows.Forms.Label();
-            this.lbCountry = new System.Windows.Forms.Label();
-            this.lbMemberID = new System.Windows.Forms.Label();
-            this.lbOrderDate = new System.Windows.Forms.Label();
-            this.lbOrderID = new System.Windows.Forms.Label();
-            this.txtShippedDate = new System.Windows.Forms.TextBox();
-            this.txtFreight = new System.Windows.Forms.TextBox();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMemberList)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.SuspendLayout();
+            dgvMemberList = new System.Windows.Forms.DataGridView();
+            btnLoad = new System.Windows.Forms.Button();
+            btnNew = new System.Windows.Forms.Button();
+            btnDelete = new System.Windows.Forms.Button();
+            txtOrderDate = new System.Windows.Forms.TextBox();
+            txtMemberID = new System.Windows.Forms.TextBox();
+            txtOrderID = new System.Windows.Forms.TextBox();
+            txtRequiredDate = new System.Windows.Forms.TextBox();
+            lbRequiredDate = new System.Windows.Forms.Label();
+            lbFreight = new System.Windows.Forms.Label();
+            lbCountry = new System.Windows.Forms.Label();
+            lbMemberID = new System.Windows.Forms.Label();
+            lbOrderDate = new System.Windows.Forms.Label();
+            lbOrderID = new System.Windows.Forms.Label();
+            txtShippedDate = new System.Windows.Forms.TextBox();
+            txtFreight = new System.Windows.Forms.TextBox();
+            btnCancel = new System.Windows.Forms.Button();
+            btnSave = new System.Windows.Forms.Button();
+            button1 = new System.Windows.Forms.Button();
+            dataGridView1 = new System.Windows.Forms.DataGridView();
+            textBox1 = new System.Windows.Forms.TextBox();
+            textBox2 = new System.Windows.Forms.TextBox();
+            textBox3 = new System.Windows.Forms.TextBox();
+            textBox4 = new System.Windows.Forms.TextBox();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)dgvMemberList).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
             // 
             // dgvMemberList
             // 
-            this.dgvMemberList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMemberList.Location = new System.Drawing.Point(13, 272);
-            this.dgvMemberList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dgvMemberList.MultiSelect = false;
-            this.dgvMemberList.Name = "dgvMemberList";
-            this.dgvMemberList.ReadOnly = true;
-            this.dgvMemberList.RowHeadersWidth = 51;
-            this.dgvMemberList.RowTemplate.Height = 29;
-            this.dgvMemberList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMemberList.Size = new System.Drawing.Size(736, 126);
-            this.dgvMemberList.TabIndex = 38;
+            dgvMemberList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvMemberList.Location = new System.Drawing.Point(13, 272);
+            dgvMemberList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            dgvMemberList.MultiSelect = false;
+            dgvMemberList.Name = "dgvMemberList";
+            dgvMemberList.ReadOnly = true;
+            dgvMemberList.RowHeadersWidth = 51;
+            dgvMemberList.RowTemplate.Height = 29;
+            dgvMemberList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            dgvMemberList.Size = new System.Drawing.Size(736, 126);
+            dgvMemberList.TabIndex = 38;
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(81, 127);
-            this.btnLoad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(124, 22);
-            this.btnLoad.TabIndex = 37;
-            this.btnLoad.Text = "&Load Details";
-            this.btnLoad.UseVisualStyleBackColor = true;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            btnLoad.Location = new System.Drawing.Point(81, 127);
+            btnLoad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnLoad.Name = "btnLoad";
+            btnLoad.Size = new System.Drawing.Size(124, 22);
+            btnLoad.TabIndex = 37;
+            btnLoad.Text = "&Load Details";
+            btnLoad.UseVisualStyleBackColor = true;
+            btnLoad.Click += btnLoad_Click;
             // 
             // btnNew
             // 
-            this.btnNew.Location = new System.Drawing.Point(340, 127);
-            this.btnNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnNew.Name = "btnNew";
-            this.btnNew.Size = new System.Drawing.Size(82, 22);
-            this.btnNew.TabIndex = 36;
-            this.btnNew.Text = "&New";
-            this.btnNew.UseVisualStyleBackColor = true;
-            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            btnNew.Location = new System.Drawing.Point(340, 127);
+            btnNew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnNew.Name = "btnNew";
+            btnNew.Size = new System.Drawing.Size(82, 22);
+            btnNew.TabIndex = 36;
+            btnNew.Text = "&New";
+            btnNew.UseVisualStyleBackColor = true;
+            btnNew.Click += btnNew_Click;
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(559, 127);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(82, 22);
-            this.btnDelete.TabIndex = 35;
-            this.btnDelete.Text = "&Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            btnDelete.Location = new System.Drawing.Point(559, 127);
+            btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new System.Drawing.Size(82, 22);
+            btnDelete.TabIndex = 35;
+            btnDelete.Text = "&Delete";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
             // 
             // txtOrderDate
             // 
-            this.txtOrderDate.Location = new System.Drawing.Point(178, 85);
-            this.txtOrderDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtOrderDate.Name = "txtOrderDate";
-            this.txtOrderDate.Size = new System.Drawing.Size(192, 23);
-            this.txtOrderDate.TabIndex = 33;
+            txtOrderDate.Location = new System.Drawing.Point(178, 85);
+            txtOrderDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtOrderDate.Name = "txtOrderDate";
+            txtOrderDate.Size = new System.Drawing.Size(192, 23);
+            txtOrderDate.TabIndex = 33;
             // 
             // txtMemberID
             // 
-            this.txtMemberID.Location = new System.Drawing.Point(178, 51);
-            this.txtMemberID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMemberID.Name = "txtMemberID";
-            this.txtMemberID.Size = new System.Drawing.Size(192, 23);
-            this.txtMemberID.TabIndex = 32;
+            txtMemberID.Location = new System.Drawing.Point(178, 51);
+            txtMemberID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtMemberID.Name = "txtMemberID";
+            txtMemberID.Size = new System.Drawing.Size(192, 23);
+            txtMemberID.TabIndex = 32;
             // 
             // txtOrderID
             // 
-            this.txtOrderID.Location = new System.Drawing.Point(178, 11);
-            this.txtOrderID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtOrderID.Name = "txtOrderID";
-            this.txtOrderID.Size = new System.Drawing.Size(192, 23);
-            this.txtOrderID.TabIndex = 31;
+            txtOrderID.Location = new System.Drawing.Point(178, 11);
+            txtOrderID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtOrderID.Name = "txtOrderID";
+            txtOrderID.Size = new System.Drawing.Size(192, 23);
+            txtOrderID.TabIndex = 31;
             // 
             // txtRequiredDate
             // 
-            this.txtRequiredDate.Location = new System.Drawing.Point(479, 11);
-            this.txtRequiredDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtRequiredDate.Name = "txtRequiredDate";
-            this.txtRequiredDate.Size = new System.Drawing.Size(219, 23);
-            this.txtRequiredDate.TabIndex = 30;
+            txtRequiredDate.Location = new System.Drawing.Point(479, 11);
+            txtRequiredDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtRequiredDate.Name = "txtRequiredDate";
+            txtRequiredDate.Size = new System.Drawing.Size(219, 23);
+            txtRequiredDate.TabIndex = 30;
             // 
             // lbRequiredDate
             // 
-            this.lbRequiredDate.AutoSize = true;
-            this.lbRequiredDate.Location = new System.Drawing.Point(392, 14);
-            this.lbRequiredDate.Name = "lbRequiredDate";
-            this.lbRequiredDate.Size = new System.Drawing.Size(81, 15);
-            this.lbRequiredDate.TabIndex = 29;
-            this.lbRequiredDate.Text = "Required Date";
+            lbRequiredDate.AutoSize = true;
+            lbRequiredDate.Location = new System.Drawing.Point(392, 14);
+            lbRequiredDate.Name = "lbRequiredDate";
+            lbRequiredDate.Size = new System.Drawing.Size(81, 15);
+            lbRequiredDate.TabIndex = 29;
+            lbRequiredDate.Text = "Required Date";
             // 
             // lbFreight
             // 
-            this.lbFreight.AutoSize = true;
-            this.lbFreight.Location = new System.Drawing.Point(392, 88);
-            this.lbFreight.Name = "lbFreight";
-            this.lbFreight.Size = new System.Drawing.Size(44, 15);
-            this.lbFreight.TabIndex = 28;
-            this.lbFreight.Text = "Freight";
+            lbFreight.AutoSize = true;
+            lbFreight.Location = new System.Drawing.Point(392, 88);
+            lbFreight.Name = "lbFreight";
+            lbFreight.Size = new System.Drawing.Size(44, 15);
+            lbFreight.TabIndex = 28;
+            lbFreight.Text = "Freight";
             // 
             // lbCountry
             // 
-            this.lbCountry.AutoSize = true;
-            this.lbCountry.Location = new System.Drawing.Point(392, 53);
-            this.lbCountry.Name = "lbCountry";
-            this.lbCountry.Size = new System.Drawing.Size(77, 15);
-            this.lbCountry.TabIndex = 27;
-            this.lbCountry.Text = "Shipped Date";
+            lbCountry.AutoSize = true;
+            lbCountry.Location = new System.Drawing.Point(392, 53);
+            lbCountry.Name = "lbCountry";
+            lbCountry.Size = new System.Drawing.Size(77, 15);
+            lbCountry.TabIndex = 27;
+            lbCountry.Text = "Shipped Date";
             // 
             // lbMemberID
             // 
-            this.lbMemberID.AutoSize = true;
-            this.lbMemberID.Location = new System.Drawing.Point(81, 51);
-            this.lbMemberID.Name = "lbMemberID";
-            this.lbMemberID.Size = new System.Drawing.Size(66, 15);
-            this.lbMemberID.TabIndex = 26;
-            this.lbMemberID.Text = "Member ID";
+            lbMemberID.AutoSize = true;
+            lbMemberID.Location = new System.Drawing.Point(81, 51);
+            lbMemberID.Name = "lbMemberID";
+            lbMemberID.Size = new System.Drawing.Size(66, 15);
+            lbMemberID.TabIndex = 26;
+            lbMemberID.Text = "Member ID";
             // 
             // lbOrderDate
             // 
-            this.lbOrderDate.AutoSize = true;
-            this.lbOrderDate.Location = new System.Drawing.Point(81, 85);
-            this.lbOrderDate.Name = "lbOrderDate";
-            this.lbOrderDate.Size = new System.Drawing.Size(64, 15);
-            this.lbOrderDate.TabIndex = 25;
-            this.lbOrderDate.Text = "Order Date";
+            lbOrderDate.AutoSize = true;
+            lbOrderDate.Location = new System.Drawing.Point(81, 85);
+            lbOrderDate.Name = "lbOrderDate";
+            lbOrderDate.Size = new System.Drawing.Size(64, 15);
+            lbOrderDate.TabIndex = 25;
+            lbOrderDate.Text = "Order Date";
             // 
             // lbOrderID
             // 
-            this.lbOrderID.AutoSize = true;
-            this.lbOrderID.Location = new System.Drawing.Point(81, 14);
-            this.lbOrderID.Name = "lbOrderID";
-            this.lbOrderID.Size = new System.Drawing.Size(51, 15);
-            this.lbOrderID.TabIndex = 24;
-            this.lbOrderID.Text = "Order ID";
+            lbOrderID.AutoSize = true;
+            lbOrderID.Location = new System.Drawing.Point(81, 14);
+            lbOrderID.Name = "lbOrderID";
+            lbOrderID.Size = new System.Drawing.Size(51, 15);
+            lbOrderID.TabIndex = 24;
+            lbOrderID.Text = "Order ID";
             // 
             // txtShippedDate
             // 
-            this.txtShippedDate.Location = new System.Drawing.Point(479, 51);
-            this.txtShippedDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtShippedDate.Name = "txtShippedDate";
-            this.txtShippedDate.Size = new System.Drawing.Size(219, 23);
-            this.txtShippedDate.TabIndex = 46;
+            txtShippedDate.Location = new System.Drawing.Point(479, 51);
+            txtShippedDate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtShippedDate.Name = "txtShippedDate";
+            txtShippedDate.Size = new System.Drawing.Size(219, 23);
+            txtShippedDate.TabIndex = 46;
             // 
             // txtFreight
             // 
-            this.txtFreight.Location = new System.Drawing.Point(479, 85);
-            this.txtFreight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtFreight.Name = "txtFreight";
-            this.txtFreight.Size = new System.Drawing.Size(219, 23);
-            this.txtFreight.TabIndex = 47;
+            txtFreight.Location = new System.Drawing.Point(479, 85);
+            txtFreight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            txtFreight.Name = "txtFreight";
+            txtFreight.Size = new System.Drawing.Size(219, 23);
+            txtFreight.TabIndex = 47;
             // 
             // btnCancel
             // 
-            this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(559, 417);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(82, 22);
-            this.btnCancel.TabIndex = 49;
-            this.btnCancel.Text = "&Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            btnCancel.Location = new System.Drawing.Point(559, 417);
+            btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new System.Drawing.Size(82, 22);
+            btnCancel.TabIndex = 49;
+            btnCancel.Text = "&Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // btnSave
             // 
-            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSave.Location = new System.Drawing.Point(340, 417);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(82, 22);
-            this.btnSave.TabIndex = 48;
-            this.btnSave.Text = "&Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            btnSave.DialogResult = System.Windows.Forms.DialogResult.OK;
+            btnSave.Location = new System.Drawing.Point(340, 417);
+            btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new System.Drawing.Size(82, 22);
+            btnSave.TabIndex = 48;
+            btnSave.Text = "&Save";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(81, 417);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 22);
-            this.button1.TabIndex = 73;
-            this.button1.Text = "&Load Members";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new System.Drawing.Point(81, 417);
+            button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(124, 22);
+            button1.TabIndex = 73;
+            button1.Text = "&Load Members";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 465);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(736, 151);
-            this.dataGridView1.TabIndex = 72;
+            dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new System.Drawing.Point(13, 465);
+            dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            dataGridView1.MultiSelect = false;
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.Size = new System.Drawing.Size(736, 151);
+            dataGridView1.TabIndex = 72;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(479, 215);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(219, 23);
-            this.textBox1.TabIndex = 81;
+            textBox1.Location = new System.Drawing.Point(479, 215);
+            textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new System.Drawing.Size(219, 23);
+            textBox1.TabIndex = 81;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(479, 181);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 23);
-            this.textBox2.TabIndex = 80;
+            textBox2.Location = new System.Drawing.Point(479, 181);
+            textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new System.Drawing.Size(219, 23);
+            textBox2.TabIndex = 80;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(178, 215);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(192, 23);
-            this.textBox3.TabIndex = 79;
+            textBox3.Location = new System.Drawing.Point(178, 215);
+            textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new System.Drawing.Size(192, 23);
+            textBox3.TabIndex = 79;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(178, 181);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(192, 23);
-            this.textBox4.TabIndex = 78;
+            textBox4.Location = new System.Drawing.Point(178, 181);
+            textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new System.Drawing.Size(192, 23);
+            textBox4.TabIndex = 78;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(392, 218);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 15);
-            this.label1.TabIndex = 77;
-            this.label1.Text = "Unit Price";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(392, 218);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(58, 15);
+            label1.TabIndex = 77;
+            label1.Text = "Unit Price";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(392, 183);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 15);
-            this.label2.TabIndex = 76;
-            this.label2.Text = "Discount";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(392, 183);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(54, 15);
+            label2.TabIndex = 76;
+            label2.Text = "Discount";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(81, 181);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 15);
-            this.label3.TabIndex = 75;
-            this.label3.Text = "Product ID";
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(81, 181);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(63, 15);
+            label3.TabIndex = 75;
+            label3.Text = "Product ID";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(81, 215);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 15);
-            this.label4.TabIndex = 74;
-            this.label4.Text = "Quantity";
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(81, 215);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(53, 15);
+            label4.TabIndex = 74;
+            label4.Text = "Quantity";
             // 
             // frmOrderDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(758, 627);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtFreight);
-            this.Controls.Add(this.txtShippedDate);
-            this.Controls.Add(this.dgvMemberList);
-            this.Controls.Add(this.btnLoad);
-            this.Controls.Add(this.btnNew);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.txtOrderDate);
-            this.Controls.Add(this.txtMemberID);
-            this.Controls.Add(this.txtOrderID);
-            this.Controls.Add(this.txtRequiredDate);
-            this.Controls.Add(this.lbRequiredDate);
-            this.Controls.Add(this.lbFreight);
-            this.Controls.Add(this.lbCountry);
-            this.Controls.Add(this.lbMemberID);
-            this.Controls.Add(this.lbOrderDate);
-            this.Controls.Add(this.lbOrderID);
-            this.Name = "frmOrderDetails";
-            this.Text = "Ass02Solution_SE1505_NguyenTuanKhai";
-            this.Load += new System.EventHandler(this.frmOrderDetails_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMemberList)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(758, 627);
+            Controls.Add(textBox1);
+            Controls.Add(textBox2);
+            Controls.Add(textBox3);
+            Controls.Add(textBox4);
+            Controls.Add(label1);
+            Controls.Add(label2);
+            Controls.Add(label3);
+            Controls.Add(label4);
+            Controls.Add(button1);
+            Controls.Add(dataGridView1);
+            Controls.Add(btnCancel);
+            Controls.Add(btnSave);
+            Controls.Add(txtFreight);
+            Controls.Add(txtShippedDate);
+            Controls.Add(dgvMemberList);
+            Controls.Add(btnLoad);
+            Controls.Add(btnNew);
+            Controls.Add(btnDelete);
+            Controls.Add(txtOrderDate);
+            Controls.Add(txtMemberID);
+            Controls.Add(txtOrderID);
+            Controls.Add(txtRequiredDate);
+            Controls.Add(lbRequiredDate);
+            Controls.Add(lbFreight);
+            Controls.Add(lbCountry);
+            Controls.Add(lbMemberID);
+            Controls.Add(lbOrderDate);
+            Controls.Add(lbOrderID);
+            Name = "frmOrderDetails";
+            Text = "OrderDetail";
+            Load += frmOrderDetails_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvMemberList).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
